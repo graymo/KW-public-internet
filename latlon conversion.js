@@ -1,3 +1,5 @@
+// Source https://vilimpoc.org/blog/2013/07/11/google-spreadsheet-geocoding-macro/
+
 function getLat(address) {
   if (address == '') {
     Logger.log("Must provide an address");
@@ -31,5 +33,4 @@ function getLat(address) {
       lng = location["results"][0]["geometry"]["location"]["lng"];
  return lng;
   }
-   // Source https://vilimpoc.org/blog/2013/07/11/google-spreadsheet-geocoding-macro/
 };
