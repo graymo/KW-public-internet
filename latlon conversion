@@ -31,5 +31,5 @@ function getLat(address) {
       lng = location["results"][0]["geometry"]["location"]["lng"];
  return lng;
   }
-   // Source http://www.digital-geography.com/geocoding-google-spreadsheets-the-simpler-way/#.VMu7Qi5cBpk
+   // Source https://vilimpoc.org/blog/2013/07/11/google-spreadsheet-geocoding-macro/
 };
