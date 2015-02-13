@@ -1,8 +1,5 @@
 {"type": "FeatureCollection", "features":
-  [{"geometry": 
-    {
-    "type": "Point"
-    "type": "Feature", "properties":
+  [
       {
       "location": "ACCKWA",
       "address": "203-639 King St W, Kitchener, N2G 1C7",
@@ -283,6 +280,5 @@
         "lat": 43.4660993,
         "lon": -80.52436139999999
       }
-    }
-  }]
+  ]
 }
