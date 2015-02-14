@@ -1,27 +1,28 @@
-{ "type": "FeatureCollection",
+{ 
+  "type": "FeatureCollection",
   "features": [
     { "type": "Feature",
-      "geometry": { 
-        "type": "Point",
-        "coordinates": [-80.5025538,43.4542411]
-        }
       "properties": {
         "Location": "ACCKWA",
         "Phone": "570-3687",
         "Address": "203-639 King St W",
         "City": " Kitchener",
         "Wheelchair Access": "No"
-        }
+        },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.5025538,43.4542411]
+        },        
     },
     { "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-80.48417300000001,43.452237]
-    }
   "properties": {
     "location": "Anishnabeg Outreach",
     "phone": "742-0300",
     "address": "5th Floor 151 Frederick St",
     "city": " Kitchener",
     "wheelchairAccess": "No"
+    },
+      "geometry": { "type": "Point", "coordinates": [-80.48417300000001,43.452237]
     },
   }, {
   "type": "Feature",
@@ -221,7 +222,7 @@
     "address": "505 Franklin St N",
     "city": " Kitchener",
     "wheelchairAccess": "",
-    }
+    },
   "geometry":
     {
     "type": "Point",
