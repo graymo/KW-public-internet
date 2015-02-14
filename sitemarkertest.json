@@ -1,0 +1,20 @@
+{"features":
+[
+  {
+  "properties":
+    {
+    "location": "ACCKWA",
+    "phone": "570-3687",
+    "address": "203-639 King St W",
+    "city": " Kitchener",
+    "wheelchairAccess": "No"
+    },
+  "type": "Feature",
+  "geometry": 
+    {
+    "type": "Point",
+    "coordinates": [-80.5025538,43.4542411]
+    }
+  },
+  ]
+  "type":"FeatureCollection"}
