@@ -1,224 +1,181 @@
-{"type": "FeatureCollection", "features":
-[
-  {
-  "type": "Feature",
-  "properties":
-    {
-    "location": "ACCKWA",
-    "phone": "570-3687",
-    "address": "203-639 King St W",
-    "city": " Kitchener",
-    "wheelchairAccess": "No"
+{ "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature",
+      "geometry": { 
+        "type": "Point",
+        "coordinates": [-80.5025538,43.4542411]
+        }
+      "properties": {
+        "Location": "ACCKWA",
+        "Phone": "570-3687",
+        "Address": "203-639 King St W",
+        "City": " Kitchener",
+        "Wheelchair Access": "No"
+        }
     },
-  "geometry": 
-    {
-    "type": "Point",
-    "coordinates": [-80.5025538,43.4542411]
+    { "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.48417300000001,43.452237]
     }
-  },
-  {
-  "type": "Feature",
-  "properties":
-    {
+  "properties": {
     "location": "Anishnabeg Outreach",
     "phone": "742-0300",
     "address": "5th Floor 151 Frederick St",
     "city": " Kitchener",
     "wheelchairAccess": "No"
     },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [-80.48417300000001,43.452237]
-    }
-  },
-  {
+  }, {
   "type": "Feature",
-  "properties":
-    {
+  "properties": {
     "location": "Community Ministry",
     "phone": "743-6309",
     "address": "825 King St W",
     "city": " Kitchener",
     "wheelchairAccess": "No"
     },
-  "geometry":
-    {
+  "geometry": {
     "type": "Point",
     "coordinates": [-80.5097301,43.4565814]
     }
-  },
-  {
+  }, {
   "type": "Feature",
-  "properties": 
-  {
+  "properties": {
     "location": "House of Friendship: Courtland-Shelley Community Centre",
     "phone": "571-7953",
     "address": "1064G Courtland Ave E",
     "city": "Kitchener",
     "wheelchairAccess": "No"
   },
-  "geometry": 
-    {
+  "geometry": {
     "type": "Point",
     "coordinates": [-80.4621208,43.422374]
     }
-  },
-  {
+  }, {
   "type": "Feature",
-  "properties": 
-    {
+  "properties": {
     "location": "House of Friendship: Sunnydale Community Program",
     "phone": "883-0410",
     "address": "508H Sunnydale Pl",
     "city": " Waterloo",
     "wheelchairAccess": "No"
     },
-  "geometry": 
-    {
+  "geometry": {
     "type": "Point",
     "coordinates": [-80.5492773,43.4875544]
     }
-  },
-  {
+  }, {
   "type": "Feature",
-  "properties": 
-    {
+  "properties": {
     "location": "Breithaupt Centre",
     "phone": "741-2502",
     "address": "350 Margaret Ave",
     "city": " Kitchener",
     "wheelchairAccess": "No"
     },
-  "geometry": 
-    {
+  "geometry": {
     "type": "Point",
     "coordinates": [-80.496113,43.4649031]
     }
-  },
-  {
+  }, {
   "type": "Feature",
-  "properties": 
-    {
+  "properties": {
     "location": "Bridgeport Community Centre",
     "phone": "741-2271",
     "address": "20 Tyson Dr",
     "city": " Kitchener",
     "wheelchairAccess": "No"
     },
-  "geometry": 
-    {
+  "geometry": {
     "type": "Point",
     "coordinates": [-80.4778566,43.4827653]
     }
-  },
-  {
+  }, {
   "type": "Feature",
-  "properties": 
-    {
+  "properties": {
     "location": "Centreville-Chicopee Community Centre",
     "phone": "741-2490",
     "address": "141 Morgan Ave",
     "city": " Kitchener",
     "wheelchairAccess": "No"
     },
-  "geometry": 
-    {
+  "geometry": {
     "type": "Point",
     "coordinates": [-80.4293407,43.4288773]
     }
-  },
-  {
+  }, {
   "type": "Feature",
-  "properties": 
-    {
+  "properties": {
     "location": "Chandler Mowat Community Centre",
     "phone": "741-2733",
     "address": "222 Chandler Dr",
     "city": " Kitchener",
     "wheelchairAccess": "No"
     },
-  "geometry": 
-    {
+  "geometry": {
     "type": "Point",
     "coordinates": [-80.4997084,43.422407]
     }
-  },
-  {
+  }, {
   "type": "Feature",
-  "properties": 
-    {
+  "properties": {
     "location": "Country Hills Community Centre",
     "phone": "741-2596",
     "address": "100 Rittenhouse Rd",
     "city": " Kitchener",
     "wheelchairAccess": "No"
     },
-  "geometry": 
-    {
+  "geometry": {
     "type": "Point",
     "coordinates": [-80.48266389999999,43.4112366]
     }
-  },
-  {
+  }, {
   "type": "Feature",
-  "properties": 
-    {
+  "properties": {
     "location": "Doon Pioneer Park Community Centre",
     "phone": "741-2641",
     "address": "150 Pioneer Dr",
     "city": " Kitchener",
     "wheelchairAccess": "No"
     },
-  "geometry": 
-    {
+  "geometry": {
     "type": "Point",
     "coordinates": [-80.43689499999999,43.3939]
     }
-  },
-  {
+  }, {
   "type": "Feature",
-  "properties": 
-    {
+  "properties": {
     "location": "Downtown Community Centre",
     "phone": "741-2501",
     "address": "35B Weber St W",
     "city": " Kitchener",
     "wheelchairAccess": "No"
     },
-  "geometry": 
-    {
+  "geometry": {
     "type": "Point",
     "coordinates": [-80.48968099999999,43.452483]
     }
-  },
-  {
+  }, {
   "type": "Feature",
-  "properties": 
-    {
+  "properties": {
     "location": "Forest Heights Community Centre",
     "phone": "741-2621",
     "address": "1700 Queens Blvd",
     "city": " Kitchener",
     "wheelchairAccess": "No"
     },
-  "geometry": 
-    {
+  "geometry": {
     "type": "Point",
     "coordinates": [-80.5276236,43.4274383]
     }
-  },
-  {
+  }, {
   "type": "Feature",
-  "properties": 
-    {
+  "properties": {
     "location": "Kingsdale Community Centre",
     "phone": "741-2540",
     "address": "72 Wilson Ave",
     "city": " Kitchener",
     "wheelchairAccess": "No"
     },
-  "geometry": 
-    {
+  "geometry": {
     "type": "Point",
     "coordinates": [-80.4592296,43.4288341]
     }
