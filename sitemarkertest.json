@@ -1,6 +1,4 @@
-{"features":
-[
-  {
+  {"type": "Feature",
   "properties":
     {
     "location": "ACCKWA",
@@ -9,12 +7,9 @@
     "city": " Kitchener",
     "wheelchairAccess": "No"
     },
-  "type": "Feature",
   "geometry": 
     {
     "type": "Point",
     "coordinates": [-80.5025538,43.4542411]
     }
-  },
-  ]
-  "type":"FeatureCollection"}
+  }
