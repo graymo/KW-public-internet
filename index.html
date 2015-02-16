@@ -1,76 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Public Internet Access Locations</title>
-	
+  <title>Public Internet Access Locations</title>
 
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 </head>
 <body>
-	<div id="map" style="width: 600px; height: 600px"></div>
+  <div id="map" style="width: 600px; height: 600px"></div>
 
-	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-	
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+  <script>
+    var map = L.map('map').setView([43.44519, -80.49271], 12);
+
+    L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+        '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      id: 'examples.map-i875mjb7'
+    }).addTo(map);
+
+    L.geoJson(    {
+      "type": "Feature",
+      "properties": {
+        "Location": "ACCKWA",
+        "Phone": "570-3687",
+        "Address": "203-639 King St W",
+        "City": " Kitchener",
+        "Wheelchair Access": "No"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.502556,
+          43.454243
+        ]
+      }
+    })
     
-	<script>
-		
-		var planes = [
-		["<b>ACCKWA</b><br>203-639 King St W<br> Kitchener<br>570-3687<br>Wheelchair Access: No",43.4542411,-80.5025538],
-		["<b>Anishnabeg Outreach</b><br>5th Floor 151 Frederick St<br> Kitchener<br>742-0300<br>Wheelchair Access: Yes",43.452237,-80.48417300000001],
-		["<b>CMHA: Centre for Mental Health</b><br>67 King St E<br> Kitchener<br>744-7645<br>Wheelchair Access: Yes",43.4492255,-80.4880335],
-		["<b>Community Ministry</b><br>825 King St W<br> Kitchener<br>743-6309<br>Wheelchair Access: Yes",43.4565814,-80.5097301],
-		["<b>House of Friendship: Courtland-Shelley Community Centre</b><br>1064G Courtland Ave E<br>Kitchener<br>571-7953<br>Wheelchair Access: No",43.422374,-80.4621208],
-		["<b>House of Friendship: Sunnydale Community Program</b><br>508H Sunnydale Pl<br> Waterloo<br>883-0410<br>Wheelchair Access: No",43.4875544,-80.5492773],
-		["<b>K-W Access-Ability</b><br>659 King St E<br> Kitchener<br>885-6640<br>Wheelchair Access: Yes",43.444756,-80.478465],
-		["<b>K-W Multicultural Centre</b><br>102 King St. W<br> Kitchener<br>745-2531<br>Wheelchair Access: Yes",43.450645,-80.49091709999999],
-		["<b>Breithaupt Centre</b><br>350 Margaret Ave<br> Kitchener<br>741-2502<br>Wheelchair Access: Yes",43.4649031,-80.496113],
-		["<b>Bridgeport Community Centre</b><br>20 Tyson Dr<br> Kitchener<br>741-2271<br>Wheelchair Access: Yes",43.4827653,-80.4778566],
-		["<b>Centreville-Chicopee Community Centre</b><br>141 Morgan Ave<br> Kitchener<br>741-2490<br>Wheelchair Access: Yes",43.4288773,-80.4293407],
-		["<b>Chandler Mowat Community Centre</b><br>222 Chandler Dr<br> Kitchener<br>741-2733<br>Wheelchair Access: Yes",43.422407,-80.4997084],
-		["<b>Country Hills Community Centre</b><br>100 Rittenhouse Rd<br> Kitchener<br>741-2596<br>Wheelchair Access: Yes",43.4112366,-80.48266389999999],
-		["<b>Doon Pioneer Park Community Centre</b><br>150 Pioneer Dr<br> Kitchener<br>741-2641<br>Wheelchair Access: Yes",43.3939,-80.43689499999999],
-		["<b>Downtown Community Centre</b><br>35B Weber St W<br> Kitchener<br>741-2501<br>Wheelchair Access: Yes",43.452483,-80.48968099999999],
-		["<b>Forest Heights Community Centre</b><br>1700 Queen's Blvd<br> Kitchener<br>741-2621<br>Wheelchair Access: Yes",43.4274383,-80.5276236],
-		["<b>Kingsdale Community Centre</b><br>72 Wilson Ave<br> Kitchener<br>741-2540<br>Wheelchair Access: Yes",43.4288341,-80.4592296],
-		["<b>Mill-Courtland Community Centre</b><br>216 Mill St<br> Kitchener<br>741-2491<br>Wheelchair Access: Yes",43.4376378,-80.487627],
-		["<b>Rockway Centre</b><br>1405 King St E<br> Kitchener<br>741-2507<br>Wheelchair Access: Yes",43.4397346,-80.466707],
-		["<b>Stanley Park Community Centre</b><br>505 Franklin St N<br> Kitchener<br>741-2504<br>Wheelchair Access: NA",43.4479761,-80.4505083],
-		["<b>Victoria Hills Community Centre</b><br>10 Chopin Dr<br> Kitchener<br>741-2717<br>Wheelchair Access: Yes",43.44332,-80.52352549999999],
-		["<b>Williamsburg Community Centre</b><br>Bldg 600 620-1187 Fischer-Hallman Rd<br> Kitchener<br>741-2240<br>Wheelchair Access: Yes",43.4057733,-80.5012671],
-		["<b>Country Hills Community Library</b><br>1500 Block Line Rd<br> Kitchener<br>743-3558<br>Wheelchair Access: Yes",43.4202344,-80.46807629999999],
-		["<b>Forest Heights Community Library</b><br>251 Fischer-Hallman Rd<br> Kitchener<br>743-0644<br>Wheelchair Access: Yes",43.425295,-80.5208686],
-		["<b>Grand River Stanley Park Community Library</b><br>175 Indian Rd<br> Kitchener<br>896-1736<br>Wheelchair Access: Yes",43.457436,-80.4365516],
-		["<b>Kitchener Public Library Main Branch</b><br>85 Queen St N<br> Kitchener<br>743-0271<br>Wheelchair Access: Yes",43.45266549999999,-80.4865729],
-		["<b>Pioneer Park Community Library</b><br>150 Pioneer Dr<br> Kitchener<br>748-2740<br>Wheelchair Access: Yes",43.3939,-80.43689499999999],
-		["<b>Our Place Family Resource Centre</b><br>154 Gatewood Rd<br> Kitchener<br>571-1626<br>Wheelchair Access: Yes",43.4325678,-80.50772549999999],
-		["<b>Queen St Commons Café</b><br>43 Queen St S<br> Kitchener<br>749-9177<br>Wheelchair Access: Yes",43.4492623,-80.489531],
-		["<b>SPCKW: Community Information Centre</b><br>3rd Floor 151 Frederick St<br> Ktichener<br>579-3800<br>Wheelchair Access: Yes",43.452237,-80.48417300000001],
-		["<b>St Louis Adult Education Centre: Main Campus</b><br>80 Young St<br> Ktichener<br>745-1201<br>Wheelchair Access: Yes",43.45267,-80.491086],
-		["<b>The Working Centre</b><br>58 Queen St S<br> Kitchener<br>743-1151<br>Wheelchair Access: Yes",43.4491543,-80.4899092],
-		["<b>Adult Recreation Centre</b><br>185 King St S<br> Waterloo<br>579-1020<br>Wheelchair Access: Yes",43.4602925,-80.5192102],
-		["<b>Wing 404 RCAFA/Rotary Adult Centre</b><br>510 Dutton Dr<br> Waterloo<br>888-6356<br>Wheelchair Access: Yes",43.4944634,-80.5393971],
-		["<b>John M Harper Community Library</b><br>500 Fischer Hallman Rd N<br> Waterloo<br>886-1310<br>Wheelchair Access: Yes",43.4634966,-80.56215780000001],
-		["<b>McCormick Community Library</b><br>500 Parkside Dr<br> Waterloo<br>886-1310<br>Wheelchair Access: Yes",43.4889274,-80.5445752],
-		["<b>Waterloo Public Library Main Branch</b><br>35 Albert St<br> Waterloo<br>886-1310<br>Wheelchair Access: Yes",43.4660993,-80.52436139999999]
-		];
-
-		var map = L.map('map').setView([43.44519, -80.49271], 12);
-
-		L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
-			maxZoom: 18,
-			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-				'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-				'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-			id: 'examples.map-i875mjb7'
-		}).addTo(map);
-
-
-		for (var i = 0; i < planes.length; i++) {
-			marker = new L.marker([planes[i][1],planes[i][2]])
-				.bindPopup(planes[i][0])
-				.addTo(map);
-		}
-
-	</script>
+  </script>
 </body>
 </html>
