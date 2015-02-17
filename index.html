@@ -20,6 +20,10 @@
         'Imagery © <a href="http://mapbox.com">Mapbox</a>',
       id: 'examples.map-i875mjb7'
     }).addTo(map);
+    
+    function onEachFeature (feature, layer) {
+      var popupContent = "feature.propertes"
+    }
     var geojsonFeature = {
     {
       "type": "Feature",
@@ -652,6 +656,8 @@
     }
   }
 
+    L.geoJson(geojsonFeature).addTo(map);
+    
   </script>
 </body>
 </html>
