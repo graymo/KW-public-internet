@@ -12,6 +12,24 @@
 
   <script>
     var map = L.map('map').setView([43.44519, -80.49271], 12);
+    
+    var geojsonFeature = {
+      "type": "Feature",
+      "properties": {
+        "Location": "ACCKWA",
+        "Phone": "570-3687",
+        "Address": "203-639 King St W",
+        "City": " Kitchener",
+        "Wheelchair Access": "No"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.502556,
+          43.454243
+        ]
+      }
+    }
 
     L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
       maxZoom: 18,
@@ -21,7 +39,7 @@
       id: 'examples.map-i875mjb7'
     }).addTo(map);
 
-    L.geoJson(sites.json).addTo(map)
+    L.geoJson(geojsonFeature).addTo(map);
     
   </script>
 </body>
