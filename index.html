@@ -21,7 +21,7 @@
       id: 'examples.map-i875mjb7'
     }).addTo(map);
     
-    function onEachFeature (feature, layer) {
+    function onEachFeature(feature, layer) {
     var popupContent = "feature.propertes"
     }
     layer.bindPopup(popupContent);
@@ -659,6 +659,7 @@
   };
 
   L.geoJson(geojsonFeature, {onEachFeature: onEachFeature}).addTo(map);
+  
   </script>
 </body>
 </html>
