@@ -22,11 +22,16 @@
         'Imagery © <a href="http://mapbox.com">Mapbox</a>',
       id: 'examples.map-i875mjb7'
     }).addTo(map);
-  
+    
+    function onEachFeature(feature, layer) {
+      layer.bindPopup(feature.properties)
+    };
+    
     var sites = {{site.data.sites|jsonify}};
     
-    L.geoJson(sites).addTo(map)
-      .bindPopup(features.properties);
+    L.geoJson(sites, {
+      onEachFeature: onEachFeature
+    }).addTo(map);
     
   </script>
 </body>
