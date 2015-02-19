@@ -25,6 +25,8 @@
   
     var sites = {{site.data.sites|jsonify}};
     
+    L.geoJson(sites).addTo(map);
+    
   </script>
 </body>
 </html>
