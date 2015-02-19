@@ -26,8 +26,8 @@
     var sites = {{site.data.sites|jsonify}};
     
     L.geoJson(sites, {
-      onEachFeature: function (feature, sites) {
-        sites.bindPopup(feature.properties.description);
+      onEachFeature: function (feature, layer) {
+        layer.bindPopup(feature.properties.description);
       }
     }).addTo(map);
     
