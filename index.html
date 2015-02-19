@@ -9,6 +9,7 @@
   <div id="map" style="width: 600px; height: 600px"></div>
 
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script src="sites.geojson" type="text/javascript"></script>
 
   <script>
     var map = L.map('map').setView([43.44519, -80.49271], 12);
@@ -21,25 +22,7 @@
       id: 'examples.map-i875mjb7'
     }).addTo(map);
 
-    var geojsonFeature = {
-      "type": "Feature",
-      "properties": {
-        "Location": "ACCKWA",
-        "Phone": "570-3687",
-        "Address": "203-639 King St W",
-        "City": " Kitchener",
-        "Wheelchair Access": "No"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -80.502556,
-          43.454243
-        ]
-      }
-    };
-  
-  L.geoJson(geojsonFeature).addTo(map);
+    L.geoJson(sites).addTo(map)
   
   </script>
 </body>
