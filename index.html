@@ -27,9 +27,7 @@
     
     L.geoJson(sites, {
       onEachFeature: function (feature, layer) {
-        if (feature.properties.{}) {
-          layer.bindPopup(feature.properties.{}).openPopup();
-          }
+          layer.bindPopup(feature.properties);
         }
       }).addTo(map);
     
