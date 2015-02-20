@@ -24,12 +24,14 @@
     }).addTo(map);
     
     var sites = {{site.data.sites|jsonify}};
+    var routes = {{site.data.grt_routes|jsonify}};
     
     L.geoJson(sites, {
       onEachFeature: function (feature, layer) {
           layer.bindPopup(feature.properties);
         }
-      }).addTo(map);
+      };
+      routes).addTo(map);
     
   </script>
 </body>
