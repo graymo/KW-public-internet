@@ -27,7 +27,9 @@
     
     L.geoJson(sites, {
       pointToLayer: function (feature, prperties) {
-    }).addTo(map);
+        var popupOptions = {maxWidth: 200};
+        var popupContent = "This is some content";
+      }).addTo(map);
     
   </script>
 </body>
