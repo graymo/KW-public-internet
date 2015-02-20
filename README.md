@@ -3,7 +3,7 @@
 This project maps the location of public internet access sites in Kitchener-Waterloo.
 A special project for ConnectKW and SPCKW.
 
-Data is from the Community Information Centre of Waterloo Region.
+Location data is from the Community Information Centre of Waterloo Region.
 
 GRT route data from Region of Waterloo Open Data Portal. 
 
