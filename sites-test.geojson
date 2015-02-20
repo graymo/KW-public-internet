@@ -1,3 +1,4 @@
 ---
 ---
 {{site.data.sites|jsonify}}
+{{site.data.grt_routes|jsonify}}
