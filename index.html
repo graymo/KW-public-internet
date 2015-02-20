@@ -24,9 +24,8 @@
     }).addTo(map);
     
     var sites = {{site.data.sites|jsonify}};
-    var routes = {{site.data.routes|jsonify}};
     
-    L.geoJson(sites, routes).addTo(map);
+    L.geoJson(sites).addTo(map);
     
   </script>
 </body>
