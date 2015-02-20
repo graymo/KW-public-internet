@@ -24,7 +24,7 @@
     }).addTo(map);
     
     var sites = {{site.data.sites|jsonify}};
-    var routes = {{site.data.grt_routes|jsonify}};
+    var routes = {{site.data.routes|jsonify}};
     
     L.geoJson(sites, {
       onEachFeature: function (feature, layer) {
