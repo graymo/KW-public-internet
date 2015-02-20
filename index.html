@@ -23,14 +23,10 @@
       id: 'examples.map-i875mjb7'
     }).addTo(map);
     
-    function onEachFeature(feature, layer) {
-      layer.bindPopup(feature.properties)
-    };
-    
     var sites = {{site.data.sites|jsonify}};
     
     L.geoJson(sites, {
-      onEachFeature: onEachFeature
+      pointToLayer: function (feature, prperties) {
     }).addTo(map);
     
   </script>
