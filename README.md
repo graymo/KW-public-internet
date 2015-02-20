@@ -5,6 +5,8 @@ A special project for ConnectKW and SPCKW.
 
 Data is from the Community Information Centre of Waterloo Region.
 
+GRT route data from Region of Waterloo Open Data Portal. 
+
 Compiled in Google Sheets.
 Exported as JSON/geoJSON with https://gist.github.com/pamelafox/1878143.
 Lat/Lon conversion in Google Sheets with https://vilimpoc.org/blog/2013/07/11/google-spreadsheet-geocoding-macro/.
