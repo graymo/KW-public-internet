@@ -1,4 +1,0 @@
----
----
-{{site.data.sites|jsonify}}
-{{site.data.routes|jsonify}}
