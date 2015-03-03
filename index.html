@@ -23,9 +23,9 @@
       id: 'examples.map-i875mjb7'
     }).addTo(map);
     
-    var routes = {{site.data.routes|jsonify}};
+    var sites = {{site.data.sites|jsonify}};
     
-    L.geoJson(routes).addTo(map);
+    L.geoJson(sites).addTo(map);
     
   </script>
 </body>
